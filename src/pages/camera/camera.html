@@ -1,0 +1,28 @@
+<!--
+  Generated template for the CameraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <img [src]="myimage || 'assets/imgs/logo.png'"/>
+  <button ion-button icon-right block (click)="takePicture()">
+    Take Picture
+    <ion-icon name="camera"></ion-icon>
+  </button>
+
+  <button color="light" ion-button icon-right block (click)="shareFB()">
+    Share to Facebook
+    <ion-icon name="logo-facebook"></ion-icon>
+  </button>
+</ion-content>
